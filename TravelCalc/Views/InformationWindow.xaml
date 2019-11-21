@@ -1,0 +1,50 @@
+﻿<Window x:Class="TravelCalc.Views.InformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelCalc.Views"
+        mc:Ignorable="d"
+        Title="InformationWindow" Height="260" Width="300" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize">
+    <Window.Background>
+        <StaticResource ResourceKey="backColor"/>
+    </Window.Background>
+
+    <Grid>
+        <Border BorderBrush="{StaticResource textBlockColor}" BorderThickness="4">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top"
+                           Text="TravelCalc"
+                           FontSize="24"
+                           FontFamily="Century Gothic"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource textBlockColor}"
+                           HorizontalAlignment="Center"
+                           Margin="10"/>
+                <TextBlock DockPanel.Dock="Top"
+                           Text="TravelCalc - калькулятор путешественника - программа, предназначенная для расчёта стоимости трансфера и проживания в путешествии с учётом количества путешественников."
+                           Style="{StaticResource TextBlockStyle2}"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Stretch"
+                           TextAlignment="Justify"
+                           VerticalAlignment="Top"
+                           Margin="10"/>
+                <TextBlock DockPanel.Dock="Top"
+                           Style="{StaticResource TextBlockStyle2}"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Stretch"
+                           TextAlignment="Justify"
+                           VerticalAlignment="Top"
+                           Margin="10">
+                    Разработчик: Береснев В.С.<LineBreak/>
+                    E-mail: vberesnev.job@gmail.com
+                </TextBlock>
+                <Button 
+                HorizontalAlignment="Center"
+                Content="Понятно" 
+                Width="100" Height="25" 
+                Click="Button_Click"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>
